@@ -1,0 +1,9 @@
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\Negocios.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\Negocios.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\AcessoBancoDados.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\ObjetoTransferencia.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\AcessoBancoDados.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\bin\Debug\ObjetoTransferencia.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\obj\Debug\Negocios.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Negocios\obj\Debug\Negocios.pdb

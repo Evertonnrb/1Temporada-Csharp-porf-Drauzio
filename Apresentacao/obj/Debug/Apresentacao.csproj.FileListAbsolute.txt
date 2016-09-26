@@ -1,0 +1,8 @@
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Apresentacao.exe.config
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Apresentacao.exe
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Apresentacao.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.csprojResolveAssemblyReference.cache
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.Properties.Resources.resources
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.exe
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.pdb

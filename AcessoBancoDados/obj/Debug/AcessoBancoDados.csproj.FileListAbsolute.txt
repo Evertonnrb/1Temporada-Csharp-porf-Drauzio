@@ -1,0 +1,6 @@
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll.config
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\obj\Debug\AcessoBancoDados.csprojResolveAssemblyReference.cache
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb

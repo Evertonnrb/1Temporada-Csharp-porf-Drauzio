@@ -1,0 +1,5 @@
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojResolveAssemblyReference.cache
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
