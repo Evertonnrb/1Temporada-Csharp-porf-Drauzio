@@ -91,6 +91,35 @@ namespace Negocios
                  throw new  Exception("Não foi possivel realizar a consulta, detalhes do erro :"+ex.Message);
             }
         }
+        public ClienteColecao ConsultarPotId(int idCliente)
+        {
+            try
+            {
+                ClienteColecao clienteColecao = new ClienteColecao();
+                acessoBancoDados.LimparParametros();
+                acessoBancoDados.AdicionarParametros("@IdCliente", idCliente);
+                DataTable dataTableCliente = acessoBancoDados.ExecutarConsulta(CommandType.StoredProcedure, "uspClienteConsultarPorId");
+
+                foreach (DataRow linha in dataTableCliente.Rows)
+                {
+                    Cliente cliente = new Cliente();
+                    cliente.IdCiente = Convert.ToInt32(linha["idCliente"]);
+                    cliente.Nome = Convert.ToString(linha["Nome"]);
+                    cliente.DataNascimento = Convert.ToDateTime(linha["DataNascimento"]);
+                    cliente.Sexo = Convert.ToBoolean(linha["Sexo"]);
+                    cliente.LimiteCompra = Convert.ToDecimal(linha["LimiteCompra"]);
+
+                    clienteColecao.Add(cliente);
+                }
+                return clienteColecao;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Não foi possivel localizar o id do cliente, detalhes do erro: "+ex.Message);
+            }
+        }
+
     }
    
 
