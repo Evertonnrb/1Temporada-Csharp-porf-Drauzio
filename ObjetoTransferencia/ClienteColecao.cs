@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ObjetoTransferencia
 {
-    public class ObjetoTransferencia : List<Cliente>
+    public class ClienteColecao : List<Cliente>
     {
     }
 }
