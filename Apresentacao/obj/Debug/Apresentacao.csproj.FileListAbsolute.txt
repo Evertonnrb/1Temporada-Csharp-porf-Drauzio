@@ -6,3 +6,4 @@ E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.Prope
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.csproj.GenerateResource.Cache
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.exe
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.FrmMenu.resources
