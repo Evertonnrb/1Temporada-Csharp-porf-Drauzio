@@ -7,3 +7,10 @@ E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.cspro
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.exe
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.pdb
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.FrmMenu.resources
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.FrmClienteSelecionar.resources
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Negocios.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\ObjetoTransferencia.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.dll
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Negocios.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.pdb

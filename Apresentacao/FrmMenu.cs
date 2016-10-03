@@ -26,5 +26,13 @@ namespace Apresentacao
         {
             Application.Exit();
         }
+
+        private void menuCliente_Click(object sender, EventArgs e)
+        {
+            FrmClienteSelecionar frmClienteSelecionar = new FrmClienteSelecionar();
+            //referenciando o pai do form
+            frmClienteSelecionar.MdiParent = this;
+            frmClienteSelecionar.Show();
+        }
     }
 }
