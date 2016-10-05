@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labelPesquisa = new System.Windows.Forms.Label();
             this.textBoxPesquisa = new System.Windows.Forms.TextBox();
             this.buttonPesquisa = new System.Windows.Forms.Button();
@@ -36,6 +41,11 @@
             this.buttonExlcuir = new System.Windows.Forms.Button();
             this.buttonConsultar = new System.Windows.Forms.Button();
             this.dataGridViewPrincipal = new System.Windows.Forms.DataGridView();
+            this.colCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columDataNascimento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.columSexo = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.columLimiteCompra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonFechar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPrincipal)).BeginInit();
             this.SuspendLayout();
@@ -93,6 +103,7 @@
             this.buttonExlcuir.TabIndex = 6;
             this.buttonExlcuir.Text = "Excluir";
             this.buttonExlcuir.UseVisualStyleBackColor = true;
+            this.buttonExlcuir.Click += new System.EventHandler(this.buttonExlcuir_Click);
             // 
             // buttonConsultar
             // 
@@ -105,11 +116,72 @@
             // 
             // dataGridViewPrincipal
             // 
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridViewPrincipal.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewPrincipal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPrincipal.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colCodigo,
+            this.columNome,
+            this.columDataNascimento,
+            this.columSexo,
+            this.columLimiteCompra});
             this.dataGridViewPrincipal.Location = new System.Drawing.Point(12, 36);
+            this.dataGridViewPrincipal.MultiSelect = false;
             this.dataGridViewPrincipal.Name = "dataGridViewPrincipal";
+            this.dataGridViewPrincipal.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridViewPrincipal.Size = new System.Drawing.Size(666, 290);
             this.dataGridViewPrincipal.TabIndex = 3;
+            // 
+            // colCodigo
+            // 
+            this.colCodigo.DataPropertyName = "IdCliente";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle7.Format = "#,##0";
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Red;
+            this.colCodigo.DefaultCellStyle = dataGridViewCellStyle7;
+            this.colCodigo.HeaderText = "Código";
+            this.colCodigo.Name = "colCodigo";
+            this.colCodigo.ReadOnly = true;
+            this.colCodigo.Width = 65;
+            // 
+            // columNome
+            // 
+            this.columNome.DataPropertyName = "Nome";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.columNome.DefaultCellStyle = dataGridViewCellStyle8;
+            this.columNome.HeaderText = "Nome";
+            this.columNome.Name = "columNome";
+            this.columNome.Width = 200;
+            // 
+            // columDataNascimento
+            // 
+            this.columDataNascimento.DataPropertyName = "DataNascimento";
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Format = "  dd/MM/yyyy";
+            this.columDataNascimento.DefaultCellStyle = dataGridViewCellStyle9;
+            this.columDataNascimento.HeaderText = "Data de nascimento";
+            this.columDataNascimento.Name = "columDataNascimento";
+            // 
+            // columSexo
+            // 
+            this.columSexo.DataPropertyName = "Sexo";
+            this.columSexo.HeaderText = "Sexo";
+            this.columSexo.Name = "columSexo";
+            this.columSexo.ReadOnly = true;
+            this.columSexo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.columSexo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.columSexo.Width = 50;
+            // 
+            // columLimiteCompra
+            // 
+            this.columLimiteCompra.DataPropertyName = "LimiteCompra";
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Format = "#,##0.00";
+            this.columLimiteCompra.DefaultCellStyle = dataGridViewCellStyle10;
+            this.columLimiteCompra.HeaderText = "Limite de compra";
+            this.columLimiteCompra.Name = "columLimiteCompra";
+            this.columLimiteCompra.ReadOnly = true;
             // 
             // buttonFechar
             // 
@@ -119,6 +191,7 @@
             this.buttonFechar.TabIndex = 2;
             this.buttonFechar.Text = "Fechar";
             this.buttonFechar.UseVisualStyleBackColor = true;
+            this.buttonFechar.Click += new System.EventHandler(this.buttonFechar_Click);
             // 
             // FrmClienteSelecionar
             // 
@@ -156,5 +229,10 @@
         private System.Windows.Forms.Button buttonConsultar;
         private System.Windows.Forms.DataGridView dataGridViewPrincipal;
         private System.Windows.Forms.Button buttonFechar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columDataNascimento;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn columSexo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn columLimiteCompra;
     }
 }
