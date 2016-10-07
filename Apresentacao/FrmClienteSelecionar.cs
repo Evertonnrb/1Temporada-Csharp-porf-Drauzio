@@ -82,5 +82,26 @@ namespace Apresentacao
                 MessageBox.Show("Não foi possivel realizar a operação " + retorno,"Error", MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
+
+        private void buttonInserir_Click(object sender, EventArgs e)
+        {
+            //insciando cliente Inserir
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Inserir);
+            frmClienteCadastrar.ShowDialog();
+        }
+
+        private void buttonAlterar_Click(object sender, EventArgs e)
+        {
+            //insciando cliente Alterar
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Alterar);
+            frmClienteCadastrar.ShowDialog();
+        }
+
+        private void buttonConsultar_Click(object sender, EventArgs e)
+        {
+            //insciando cliente Consultar
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Consultar);
+            frmClienteCadastrar.ShowDialog();
+        }
     }
 }

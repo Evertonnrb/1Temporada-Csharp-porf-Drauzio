@@ -14,3 +14,4 @@ E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.d
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\Negocios.pdb
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\ObjetoTransferencia.pdb
 E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\bin\Debug\AcessoBancoDados.pdb
+E:\Dev\Prof-Drauzio\Projeto\Temporada1\Apresentacao\obj\Debug\Apresentacao.FrmClienteCadastrar.resources
