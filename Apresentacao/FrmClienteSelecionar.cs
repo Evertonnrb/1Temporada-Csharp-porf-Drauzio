@@ -107,7 +107,11 @@ namespace Apresentacao
 
             //insciando cliente Alterar
             FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Alterar,clienteEnccontrado);
-            frmClienteCadastrar.ShowDialog();
+            DialogResult resultado = frmClienteCadastrar.ShowDialog();
+            if(resultado == DialogResult.Yes)
+            {
+                atualizarGrid();
+            }
         }
 
         private void buttonConsultar_Click(object sender, EventArgs e)

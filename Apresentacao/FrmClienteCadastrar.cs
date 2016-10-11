@@ -112,7 +112,35 @@ namespace Apresentacao
             }
             else if (acaoNaTelaSelecionado == AcaoNaTela.Alterar)
             {
+                Cliente cliente = new Cliente();
+                cliente.IdCiente = Convert.ToInt32(textBoxCodigo);
+                cliente.Nome = textBoxNome.Text;
+                cliente.DataNascimento = dateDataNascimento.Value;
+                if (radioButtonMas.Checked == true)
+                {
+                    cliente.Sexo = true;
+                }
+                else
+                {
+                    cliente.Sexo = false;
+                }
+                cliente.LimiteCompra = Convert.ToDecimal(textBoxLimite.Text);
+                //Utilizando a regra de negocios para persistir o cliente
+                ClienteNegocios clienteNegocios = new ClienteNegocios();
+                string retorno = clienteNegocios.Alterar(cliente);
+                //Experado na persistencia =  Convert.int , cod como retorno, excption
+                try
+                {
+                    int idCliente = Convert.ToInt32(retorno);
+                    MessageBox.Show("Cliente alterado com sucesso " + idCliente.ToString());
+                    this.DialogResult = DialogResult.Yes;
+                }
+                catch (Exception)
+                {
 
+                    MessageBox.Show("Não foi possível realiza a operação. Detalhes: " + retorno, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    this.DialogResult = DialogResult.No;
+                }
             }
         }
 
