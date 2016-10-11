@@ -86,21 +86,42 @@ namespace Apresentacao
         private void buttonInserir_Click(object sender, EventArgs e)
         {
             //insciando cliente Inserir
-            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Inserir);
-            frmClienteCadastrar.ShowDialog();
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Inserir,null);
+           DialogResult dialogResult = frmClienteCadastrar.ShowDialog();
+            if(dialogResult == DialogResult.Yes)
+            {
+                atualizarGrid();
+            }
         }
 
         private void buttonAlterar_Click(object sender, EventArgs e)
         {
+            //Verificando se tem cliente selecionado
+            if (dataGridViewPrincipal.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Nenhuma linha foi selecionada");
+                return;
+            }
+            //convertendo o cliente com um casting grid para cliente
+            Cliente clienteEnccontrado = (dataGridViewPrincipal.SelectedRows[0].DataBoundItem as Cliente);
+
             //insciando cliente Alterar
-            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Alterar);
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Alterar,clienteEnccontrado);
             frmClienteCadastrar.ShowDialog();
         }
 
         private void buttonConsultar_Click(object sender, EventArgs e)
         {
+            //Verificando se tem cliente selecionado
+            if (dataGridViewPrincipal.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Nenhuma linha foi selecionada");
+                return;
+            }
+            //convertendo o cliente com um casting grid para cliente
+            Cliente clienteEnccontrado = (dataGridViewPrincipal.SelectedRows[0].DataBoundItem as Cliente);
             //insciando cliente Consultar
-            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Consultar);
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar(AcaoNaTela.Consultar,clienteEnccontrado);
             frmClienteCadastrar.ShowDialog();
         }
     }

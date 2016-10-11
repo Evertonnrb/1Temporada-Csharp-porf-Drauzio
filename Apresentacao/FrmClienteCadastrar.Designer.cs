@@ -141,6 +141,7 @@
             this.textBoxLimite.Size = new System.Drawing.Size(87, 20);
             this.textBoxLimite.TabIndex = 6;
             this.textBoxLimite.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxLimite.TextChanged += new System.EventHandler(this.textBoxLimite_TextChanged);
             // 
             // buttonSalvar
             // 
@@ -150,6 +151,7 @@
             this.buttonSalvar.TabIndex = 7;
             this.buttonSalvar.Text = "Salvar";
             this.buttonSalvar.UseVisualStyleBackColor = true;
+            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
             // 
             // buttonCancelar
             // 
@@ -159,6 +161,7 @@
             this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // FrmClienteCadastrar
             // 
